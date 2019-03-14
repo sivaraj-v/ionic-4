@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+
+    <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-buttons slot="start">
+                    <ion-back-button></ion-back-button>
+                </ion-buttons>
+                <ion-title>Budget</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label position="floating">Expense Reason</ion-label>
+                            <ion-input type="text" id="input-reason"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label position="floating">Expense Amount</ion-label>
+                            <ion-input type="number" id="input-amount"></ion-input>
+                        </ion-item>
+                        <ion-button id="btn-clear" class="ion-padding-start" color="danger" fill="outline">
+                            <ion-icon slot="start" name="remove"></ion-icon>
+                            Clear
+                        </ion-button>
+                        <ion-button id="btn-add" class="ion-margin-vertical" color="primary">
+                            <ion-icon slot="start" name="add"></ion-icon>
+                            Add expense
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-list id="expense-list"></ion-list>
+                    </ion-col>
+
+                </ion-row>
+            </ion-grid>
+
+
+
+        </ion-content>
+
+    </ion-app>
+</body>
+<script src="./index.js"></script>
+
+</html>
