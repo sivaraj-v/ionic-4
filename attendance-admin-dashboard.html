@@ -15,15 +15,21 @@
 
   <body>
     <ion-app>
-      <ion-header>
-        <ion-toolbar color="tertiary">
-          <ion-buttons slot="start">
-            <ion-back-button></ion-back-button>
-          </ion-buttons>
-          <ion-title>Admin</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content>
+            <ion-header>
+                    <ion-toolbar color="tertiary">
+                      <ion-buttons slot="start">
+                        <ion-back-button></ion-back-button>
+                      </ion-buttons>
+                      <ion-title>Admin</ion-title>
+                    </ion-toolbar>
+                  </ion-header>
+            <ion-content>
+                    <ion-refresher slot="fixed">
+                      <ion-refresher-content></ion-refresher-content>
+                    </ion-refresher>
+                  
+      
+     
         <ion-grid>
           <ion-row>
             <ion-col >
@@ -56,8 +62,8 @@
             </ion-col>
           </ion-row>
         </ion-grid>
-      </ion-content>
       <ion-alert-controller></ion-alert-controller>
+    </ion-content>
     </ion-app>
   </body>
   <script src="./index.js"></script>
